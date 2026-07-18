@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: flex-start;
+    align-items: right;
+    padding: 10px;
+    overflow: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav{
+    height: 100%;
+    width: 100px;
+    margin-right: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+    margin-top: 70px;
+}
+
+nav a{
+    display: block;
+    transform: rotateZ(270deg);
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+main{
+    width: 95%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr 2fr;
+    grid-template-rows:  1fr 1fr 1fr 1fr;
+    grid-template-areas: "cleft ctop ctop ctop"
+    "cleft ccenter ccenter center-right-1"
+    "cleft ccenter ccenter center-right-2"
+    "cleft bottom-left bottom-center bottom-right";
+    gap: 20px;
+}
+
+main div{
+    border-radius: 20px;
+}
+
+.cleft{
+    background-color: #8184D2;
+    grid-area: cleft
+}
+
+.ctop{
+    grid-area: ctop;
+}
+
+.ccenter{
+    background-image: url("/ostrich.png");
+    background-size: cover;
+    background-position: center;
+    grid-area: ccenter;
+}
+
+.center-right-1{
+    background-color: #A9D9D7;
+    grid-area: center-right-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.center-right-2{
+    background-color: #8E6FBE;
+    grid-area: center-right-2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white
+}
+
+.bottom-left{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    grid-area: bottom-left;
+    color: white
+}
+
+.bottom-center{
+    background-color: black;
+    grid-area: bottom-center
+}
+
+.bottom-right{
+    background-color: #FEC267;
+    grid-area: bottom-right;
+    margin-left: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.w-circle{
+    height: 280px;
+    width: 280px;
+    border: 10px solid white;
+    border-radius: 50%;
+    position: relative;
+    left: 35%;
+    top: 15%;
+}
+
+.circle{
+    height: 250px;
+    width: 250px;
+    background-color: #EFAEFF;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img{
+    height: 400px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20%;
+}
+
+.left-content{
+    position: relative;
+    top: 15%;
+    left: 10%;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.left-content p:first-child{
+    font-size: 50px;
+}
+
+.left-content h1{
+    font-size: 50px;
+    font-weight: 500;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.left-content p:last-child{
+    padding: 5px;
+    display: inline;
+    border-bottom: 2px dashed white
+}
+
+.disk{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 60%;
+    bottom: 5%;
+    padding: 10px;
+    border-top: 2px solid black;
+    border-radius: 50%
+}
+
+.ctop{
+    display: flex
+}
+
+.ctop h1{
+    font-size: 170px;
+    letter-spacing: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ctop i{
+    font-size: 60px;
+    transform: rotateZ(-40deg);
+    position: relative;
+    left: 4%;
+    top: 6%
+}
+
+.ccenter i{
+    font-size: 40px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow:
+        0 8px 32px rgba(0,0,0,.25),
+        inset 0 1px 1px rgba(255,255,255,.25);
+        border-radius: 50%;
+}
+
+.bottom-left i{
+    font-size: 50px;
+}
+
+.bottom-center img{
+    height: 170px
+}
+
+.tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    left:8%;
+    width: 110px;
+    position: absolute;
+    padding: 10px;
+    background: white;
+}
