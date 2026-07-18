@@ -62,7 +62,7 @@ main div{
 }
 
 .ccenter{
-    background-image: url("/ostrich.png");
+    background-image: url("./ostrich.png");
     background-size: cover;
     background-position: center;
     grid-area: ccenter;
